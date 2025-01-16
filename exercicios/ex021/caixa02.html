@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(137, 137, 137);
+        }
+        header {
+            background-color: white;
+            padding: 0px 10px 10px 10px;
+            margin: 10px;
+        }
+        h1 {
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.555);
+        }
+        nav {
+            background-color: rgb(163, 162, 162);
+            padding: 3px;
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.315);
+        }
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 20px;
+        }
+        nav > a:hover {
+            text-decoration: underline;
+        }
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 10px 10px 10px;
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.183);
+        }
+        article {
+            background-color: rgba(187, 186, 186, 0.674);
+            padding: 5px;
+
+        }
+        article > aside {
+            background-color: rgba(232, 231, 231, 0.975);
+            padding-left: 10px;
+        }
+        p {
+            text-align: justify;
+        }
+        footer {
+            background-color: black;
+            color: whitesmoke;
+            text-align:center;
+            font-size: 0.8rem;
+            padding: 5px;
+            margin: 0px;
+        }
+        footer > p {
+            margin: 0px;
+        }
+        div#bola {
+            height: 100px;
+            width: 100px;
+            background-color: white;
+            margin: 10px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="#">Quem Somos</a>
+            <a href="#">Arquitetura</a>
+            <a href="#">Interiores</a>
+            <a href="#">Paisagismo</a>
+            <a href="#">Prêmios</a>
+        </nav>
+    </header>
+    <main>
+        <section id="Assuntos">
+            <p>Arquitetura Histórico Escritório</p>
+        </section>
+        <section id="Notícias">
+            <article>
+                <h2>Quem Somos</h2>
+                <h3>É possível ter sections dentro de articles e vice-versa. É possíveol colocar qualquer grouping tag em qualquer grouping tag.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt doloribus aliquid incidunt culpa nobis minus optio quisquam tempora et dicta, at reprehenderit, quia voluptate quasi a! Tempore fugiat enim fuga!</p>
+                <aside>
+                    <p>Artigo escrito por Marcela Gómez.</p>
+            </article>
+            <article>
+                <h2>Projetos</h2>
+                <h3>É possível ter sections dentro de articles e vice-versa. É possíveol colocar qualquer grouping tag em qualquer grouping tag.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt doloribus aliquid incidunt culpa nobis minus optio quisquam tempora et dicta, at reprehenderit, quia voluptate quasi a! Tempore fugiat enim fuga!</p>
+                <aside>
+                    <p>Artigo escrito por Marcela Gómez.</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Marcela Gómez Tech Developer & Designer</p>
+    </footer>   
+    <div id="bola"></div>
+</body>
+</html>

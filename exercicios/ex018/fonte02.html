@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+        @font-face {
+            font-family: 'SuperMorning';
+            src: url(fontes/Supermorning.ttf) format('Truetype')
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Pasta';
+            src: url(fontes/Eatingpasta.ttf) format('Truetype'), url(fontes/Eatingpasta.otf) format('opentype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            font-family: 'SuperMorning', 'Pasta', Times, serif;
+            font-size: 3em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Título</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero consequuntur deserunt tempore maiores doloremque. Nemo odio ad corrupti possimus facilis laborum cumque in molestias vitae. Dicta soluta architecto nesciunt dolore.</p>
+</body>
+</html>
