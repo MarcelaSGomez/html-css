@@ -6,17 +6,25 @@
     <title>Teste de imagens</title>
     <style>
         body {
-            background-color: black;
+            /*background-color: black;
             background-image: url(imagens/wallpaper002.jpg);
             background-position: center center;
             background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+
+            Shorthand: Background - Ordem:
+            Color > Image > Position > Repeat > Size* > Attachment. 
+            * Size = mesmo incluído na ordem, por algum motivo, ao incluir o size no shorthand, ele quebra. Então não vou usar. Vou incluir a parte*/
+
+            background: black url(imagens/wallpaper002.jpg) center center no-repeat fixed;
             background-size: cover;
 
         }
 
         main {
             background-color: white;
-            width: 300px;
+            max-width: 300px; /*No max-width, o max é importante para que ao usar um celular bem fino, a caixa de texto vai automaticamente quebrando o texto e se afinando, sem gerar rolagem horizontal na leitura. O prof considera 400 um tamanho legal.*/
             margin: auto;
             padding: 20px 20px 25px 20px;
             border-radius: 10px;
