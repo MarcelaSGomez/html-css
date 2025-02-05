@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento Vertical</title>
+    <style>
+        #container {
+            position: relative; /*Todo block é relativo por padrão, mas coloquei para conhecer o comando*/
+
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+            background-color: purple;
+            height: 94vh;
+            padding: 10px;
+        }
+
+        #conteudo {
+            position: absolute;
+            left: 50%; /*left, top, right, bottom fazem o descolamento do canto superior esquerdo do article. Assim posso decidir onde ele deve ficar dentro do section.*/
+            top: 50%;
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+            background-color: yellow;
+            height: 100px;
+            width: 200px;
+            transform: translate(-50%, -50%);
+            
+        }
+
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>
