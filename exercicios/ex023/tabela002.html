@@ -12,9 +12,25 @@
         table {
             width: 400px;
             border-collapse: collapse;
+            position: relative;
         }
 
        caption {
+        background-color: lightgray;
+       }
+
+       thead, tfoot {
+            background-color: gray;
+            color: white;
+        }
+
+        thead > tr > th {
+            position: sticky; 
+            top: -1px;
+            background-color: gray;
+        }
+
+       tbody > tr:nth-child(2n) {
         background-color: lightgray;
        }
 
@@ -27,10 +43,7 @@
             text-align: right;
         }
 
-        thead, tfoot {
-            background-color: gray;
-            color: white;
-        }
+        
 
         tfoot th {
             text-align: left;
@@ -70,6 +83,14 @@
             <td>Rio de Janeiro</td>
             <td class="num">17.219.679</td>
         </tr>
+        <tr>
+            <td>Bahia</td>
+            <td class="num">14.850.513</td>
+        </tr>
+        <tr>
+            <td>Paraná</td>
+            <td class="num">11.824.665</td>
+        </tr>
     </tbody>
     <tfoot>
         <tr>
@@ -78,5 +99,13 @@
         </tr>
     </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum voluptatibus, fuga eius libero at tempora blanditiis tenetur quos ut laborum veniam dicta ad provident quia dolorum perferendis repellat eligendi dolorem. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat alias ea nostrum odio vero ad, quas necessitatibus ab enim doloribus ipsa, quae, cumque praesentium! Fugit quis velit ipsa repellendus debitis!
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum voluptatibus, fuga eius libero at tempora blanditiis tenetur quos ut laborum veniam dicta ad provident quia dolorum perferendis repellat eligendi dolorem. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat alias ea nostrum odio vero ad, quas necessitatibus ab enim doloribus ipsa, quae, cumque praesentium! Fugit quis velit ipsa repellendus debitis!
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum voluptatibus, fuga eius libero at tempora blanditiis tenetur quos ut laborum veniam dicta ad provident quia dolorum perferendis repellat eligendi dolorem. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat alias ea nostrum odio vero ad, quas necessitatibus ab enim doloribus ipsa, quae, cumque praesentium! Fugit quis velit ipsa repellendus debitis!
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum voluptatibus, fuga eius libero at tempora blanditiis tenetur quos ut laborum veniam dicta ad provident quia dolorum perferendis repellat eligendi dolorem. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat alias ea nostrum odio vero ad, quas necessitatibus ab enim doloribus ipsa, quae, cumque praesentium! Fugit quis velit ipsa repellendus debitis!
+    </p>
 </body>
 </html>
