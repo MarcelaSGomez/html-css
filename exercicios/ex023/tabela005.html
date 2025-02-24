@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela 005</title>
+    <style>
+        tbody {
+            font-family: Arial;
+        }
+
+        table{
+            width: 400px;
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        thead {
+            background-color: black;
+            color: white;
+        }
+
+        col.cnome{
+            background-color: gray;
+        }
+
+        col.cdados{
+            background-color: lightblue;
+        }
+
+        col.amarelo {
+            background-color: lightyellow;
+        }
+
+        th, td {
+            border: 1px solid black;
+        }
+
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="cdados" span="2">
+            <col class="amarelo">
+        </colgroup>
+        <caption>Tabela de Dados</caption>
+        <thead>
+            <th>Nome</th>
+            <th>Idade</th>
+            <th>Sexo</th>
+            <th>Profissão</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Marcela</td>
+                <td>39</td>
+                <td>Sexo</td>
+                <td>Arquiteta</td>
+            </tr>
+            <tr>
+                <td>Marcela</td>
+                <td>39</td>
+                <td>Sexo</td>
+                <td>Arquiteta</td>
+            </tr>
+            <tr>
+                <td>Marcela</td>
+                <td>39</td>
+                <td>Sexo</td>
+                <td>Arquiteta</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
