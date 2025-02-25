@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos de iframe</title>
+    
+</head>
+
+<body>
+    <h1>Testando o uso de um Iframe</h1>
+    <p>Acessando um site do <a href="https://www.cursoemvideo.com" target="_blank">Curso em Vídeo</a> para aprender a programar.</p>
+    <br>
+    <p>Também o possível incluir um site de outra forma:</p>
+
+    <p>Acessando um site do 
+        <iframe src="https://www.cursoemvideo.com" frameborder="0" scolling="No"> 
+            <a href="https://www.cursoemvideo.com">Curso em Vídeo</a>
+        </iframe> 
+    para aprender a programar.</p>
+
+    <!--Scolling: Auto - aparece barra de rolagem se o site for maior que o iframe. 
+    Yes - aparece sempre.
+    No - nunca aparece.
+    Esse parâmetro costuma não funcionar em alguns navegadores.
+    -->
+
+    <p>O site do 
+        <iframe src="https://www.google.com" frameborder="0"></iframe>
+    Google não funciona dentro do iframe. Ele tem proteção contra isso.</p>
+
+<br>
+
+    <!--Tamanho padrão de iframe: 300 x 150-->
+
+    <p style="font-weight: bold;">Para Alterar o tamanho padrão de um iframe faça:</p>
+
+    <p>Acessando um site do 
+        <iframe src="https://www.cursoemvideo.com" frameborder="0" height="500" width="500">
+            <a href="https://www.cursoemvideo.com">Curso em Vídeo</a>
+        </iframe> 
+    para aprender a programar.</p>
+
+    <p>No CSS também é possível alterar o tamanho e as propriedades definidas lá, se sobrepõem as do HTML. <br>    
+        iframe { <br>
+            height: 200px; <br>
+            width: 200px; <br>
+        }
+    </p> 
+  
+</body>
+</html>
