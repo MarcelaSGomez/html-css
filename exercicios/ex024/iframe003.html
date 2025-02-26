@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navgação com Links Internos</title>
+    <style>
+        body {
+            
+        }
+
+        iframe {
+            border: 2px solid black;
+            width: 95vh;
+            margin: auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Navgação com Links Internos</h1>
+    <p>Vou criar links nessa página para poder abrir outras páginas dentro de um iframe aqui mesmo.</p>
+
+    <li>
+        <ul><a href="paginas-extras/page001.html" target="frame">Página 01</a></ul>
+        <ul><a href="paginas-extras/page002.html" target="frame">Página 02</a></ul>
+        <ul><a href="paginas-extras/page003.html" target="frame">Página 03</a></ul>
+    </li>
+
+    <p>Agora você verá o iframe com as pagínas listadas acima:</p>
+
+    <iframe name="frame" src="paginas-extras/page001.html"></iframe>
+</body>
+</html>
